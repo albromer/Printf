@@ -6,7 +6,7 @@
 /*   By: albromer <albromer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/25 12:06:22 by albromer          #+#    #+#             */
-/*   Updated: 2023/01/30 11:46:26 by albromer         ###   ########.fr       */
+/*   Updated: 2023/01/31 10:52:40 by albromer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,5 +23,5 @@ void	ft_putstr(char *s, int *count)
 		return ;
 	}
 	write (1, s, ft_strlen(s));
-	*count += ft_strlen(s);
+	*count = *count + ft_strlen(s);
 }

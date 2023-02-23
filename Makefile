@@ -6,7 +6,7 @@
 #    By: albromer <albromer@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/25 10:18:45 by albromer          #+#    #+#              #
-#    Updated: 2023/01/26 13:22:22 by albromer         ###   ########.fr        #
+#    Updated: 2023/02/07 10:07:49 by albromer         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,7 +30,7 @@ SRC =	ft_printf.c\
 OBJ = $(SRC:.c=.o)
 
 ${NAME}:
-		${CC} -c ${CFlAGS} ${SRC}
+		${CC} -c ${CFLAGS} ${SRC}
 		ar crs ${NAME} ${OBJ}
 
 all: ${NAME}

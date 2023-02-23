@@ -6,7 +6,7 @@
 /*   By: albromer <albromer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/26 10:40:27 by albromer          #+#    #+#             */
-/*   Updated: 2023/01/30 10:22:32 by albromer         ###   ########.fr       */
+/*   Updated: 2023/01/31 11:11:36 by albromer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ void	ft_putnbr(int num, int *count)
 			num *= -1;
 			ft_putnbr(num, count);
 		}
-		else if (num > 10)
+		else if (num >= 10)
 		{
 			ft_putnbr((num / 10), count);
 			ft_putchar((num % 10 + '0'), count);
